@@ -250,7 +250,7 @@ body {
 .hero-grid {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 440px);
+  grid-template-columns: 1fr minmax(320px, 460px);
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
@@ -270,45 +270,53 @@ body {
   left: 50%;
   top: min(240px, 32vh);
   transform: translate(-50%, -50%);
-  width: min(360px, 92vw);
-  height: min(480px, 58vh);
+  width: min(380px, 94vw);
+  height: min(500px, 60vh);
   background: radial-gradient(
     ellipse 55% 50% at 50% 50%,
-    color-mix(in srgb, var(--accent) 14%, transparent) 0%,
-    color-mix(in srgb, #8aa0b8 8%, transparent) 40%,
-    transparent 72%
+    color-mix(in srgb, var(--accent) 16%, transparent) 0%,
+    color-mix(in srgb, #a8b8cc 10%, transparent) 42%,
+    transparent 74%
   );
   filter: blur(28px);
-  opacity: 0.85;
+  opacity: 0.88;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Cadre portrait : toute la silhouette visible (pas de rognage) */
+/* Cadre portrait : silhouette entière, marge intérieure, rendu propre */
 .hero-photo-wrap {
   position: relative;
   z-index: 1;
   margin: 0;
   align-self: center;
-  width: min(280px, 88vw);
+  width: min(300px, 90vw);
   max-width: 100%;
-  max-height: min(520px, 62vh);
+  max-height: min(540px, 64vh);
   aspect-ratio: 9 / 16;
   height: auto;
-  border-radius: var(--radius);
+  border-radius: calc(var(--radius) + 4px);
   overflow: hidden;
-  border: 2px solid color-mix(in srgb, var(--accent) 22%, rgba(255, 255, 255, 0.12));
+  box-sizing: border-box;
+  padding: clamp(10px, 2.4vw, 18px);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, rgba(255, 255, 255, 0.14));
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 10px 36px rgba(0, 0, 0, 0.38),
-    0 0 64px color-mix(in srgb, var(--accent) 10%, transparent);
-  background: var(--bg-card);
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 14px 40px rgba(0, 0, 0, 0.36),
+    0 0 72px color-mix(in srgb, var(--accent) 12%, transparent);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--bg-elevated) 100%, transparent) 0%,
+    var(--bg-card) 45%,
+    color-mix(in srgb, var(--bg) 88%, var(--bg-card)) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Léger fondu sur les bords du cadre */
+/* Léger fondu sur les bords (moins sombre pour garder la photo lisible) */
 .hero-photo-wrap::after {
   content: "";
   position: absolute;
@@ -316,16 +324,20 @@ body {
   border-radius: inherit;
   pointer-events: none;
   z-index: 2;
-  box-shadow: inset 0 0 28px rgba(12, 15, 20, 0.28);
+  box-shadow: inset 0 0 20px rgba(12, 15, 20, 0.14);
 }
 
 .hero-photo {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   object-position: center center;
-  filter: brightness(0.98) contrast(0.96) saturate(0.92);
+  filter: brightness(1.06) contrast(1.04) saturate(1.02);
 }
 
 @media (max-width: 900px) {
@@ -334,7 +346,7 @@ body {
   }
 
   .hero-visual {
-    max-width: min(400px, 100%);
+    max-width: min(420px, 100%);
     margin-inline: auto;
   }
 
