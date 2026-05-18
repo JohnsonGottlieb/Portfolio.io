@@ -4,7 +4,10 @@ Site portfolio statique (HTML, CSS, JavaScript) pour présenter le parcours, les
 
 **Dépôt :** [github.com/JohnsonGottlieb/Portfolio.io](https://github.com/JohnsonGottlieb/Portfolio.io)
 
-**Projet phare :** [MechAssist](https://github.com/JohnsonGottlieb/Mechassist) — application client / mécanicien (Flutter, Laravel, PostgreSQL, Firebase).
+**Projets phares :**
+
+- [MechAssist](https://github.com/JohnsonGottlieb/Mechassist) — application client / mécanicien (Flutter, Laravel, PostgreSQL, Firebase).
+- [Luxury Sales](https://github.com/JohnsonGottlieb/luxury-sales) — gestion des ventes luxe (Flask, SQLAlchemy, SQLite, Bootstrap 5).
 
 ## Aperçu local
 
