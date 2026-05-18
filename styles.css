@@ -434,6 +434,26 @@ body {
   color: var(--accent);
 }
 
+.btn-sm {
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.15rem;
+}
+
+@media (min-width: 900px) {
+  .project-featured .project-links {
+    grid-column: 1;
+    grid-row: 4;
+    align-self: end;
+  }
+}
+
 .hero-meta {
   list-style: none;
   margin: 0;

@@ -4,6 +4,8 @@ Site portfolio statique (HTML, CSS, JavaScript) pour présenter le parcours, les
 
 **Dépôt :** [github.com/JohnsonGottlieb/Portfolio.io](https://github.com/JohnsonGottlieb/Portfolio.io)
 
+**Projet phare :** [MechAssist](https://github.com/JohnsonGottlieb/Mechassist) — application client / mécanicien (Flutter, Laravel, PostgreSQL, Firebase).
+
 ## Aperçu local
 
 Ouvrir `index.html` dans un navigateur, ou servir le dossier avec un serveur HTTP local :
