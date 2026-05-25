@@ -8,6 +8,7 @@ Site portfolio statique (HTML, CSS, JavaScript) pour présenter le parcours, les
 
 - [MechAssist](https://github.com/JohnsonGottlieb/Mechassist) — application client / mécanicien (Flutter, Laravel, PostgreSQL, Firebase).
 - [Luxury Sales](https://github.com/JohnsonGottlieb/luxury-sales) — gestion des ventes luxe (Flask, SQLAlchemy, SQLite, Bootstrap 5).
+- [Lônlon](https://github.com/JohnsonGottlieb/lonlon) — application de rencontre mobile (Flutter, Firebase Auth, Firestore, FCM).
 
 ## Aperçu local
 
